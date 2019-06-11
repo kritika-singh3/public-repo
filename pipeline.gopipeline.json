@@ -43,7 +43,7 @@
       "approval":{
       "type":"manual",
       "allowOnlyOnSuccess":true
-      }
+      },
       "jobs": [
         {
           "name": "publish",

@@ -42,7 +42,7 @@
       "environment_variables": [],
       "approval":{
       "type":"manual",
-      "allowOnlyOnSuccess":true
+      "allow_only_on_success":true
       },
       "jobs": [
         {

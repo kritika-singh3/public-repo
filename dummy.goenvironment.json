@@ -5,5 +5,8 @@
       "name": "key1",
       "value": "value1"
     }
-  ]
+  ],
+  "agents":[
+    "baf9c51f-9f1c-4644-a3dc-f2958fafd05a"
+    ]
 }

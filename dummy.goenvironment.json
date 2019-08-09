@@ -5,11 +5,5 @@
       "name": "key1",
       "value": "value1"
     }
-  ],
-  "agents": [
-    "c24ed8b5-d534-46cb-9f2f-e660c6730123"
-  ],
-  "pipelines": [
-    "up42"
   ]
 }

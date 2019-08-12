@@ -1,5 +1,5 @@
 {
-  "name": "dev",
+  "name": "env1",
   "environment_variables": [
     {
       "name": "key1",

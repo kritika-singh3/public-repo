@@ -1,0 +1,42 @@
+format_version: 3
+pipelines:
+  test:
+    group: test
+    label_template: ${COUNT}
+    lock_behavior: none
+    display_order: -1
+    materials:
+      git:
+        git: file:///test-repo
+        shallow_clone: false
+        auto_update: true
+        branch: master
+    stages:
+    - first_stage:
+        fetch_materials: true
+        keep_artifacts: false
+        clean_workspace: false
+        approval:
+          type: success
+          allow_only_on_success: false
+        jobs:
+          first_job:
+            timeout: 0
+            tasks:
+            - exec:
+                command: ls
+                run_if: passed
+    - stage_second:
+        fetch_materials: true
+        keep_artifacts: false
+        clean_workspace: false
+        approval:
+          type: manual
+          allow_only_on_success: true
+        jobs:
+          second_job:
+            timeout: 0
+            tasks:
+            - exec:
+                command: ls
+                run_if: passed

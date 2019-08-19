@@ -24,7 +24,6 @@ GoCD.script {
           }
           jobs {
             job('first_job') {
-              runInstanceCount = '0'
               timeout = 0
               tasks {
                 exec {
@@ -45,7 +44,6 @@ GoCD.script {
           }
           jobs {
             job('second_job') {
-              runInstanceCount = '0'
               timeout = 0
               tasks {
                 exec {

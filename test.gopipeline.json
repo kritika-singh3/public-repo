@@ -8,7 +8,7 @@
   "parameters": [],
   "materials": [
     {
-      "url": "file:///test-repo",
+      "url": "https://github.com/krazybird/public-repo",
       "branch": "master",
       "shallow_clone": false,
       "filter": {

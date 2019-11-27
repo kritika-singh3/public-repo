@@ -1,3 +1,3 @@
 # public-repo
 
-Updating this will create a commit.
+Updating this will create a new commit.

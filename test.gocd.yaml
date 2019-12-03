@@ -1,6 +1,6 @@
 format_version: 3
 pipelines:
-  test:
+  test_yaml:
     group: test
     label_template: ${COUNT}
     lock_behavior: none

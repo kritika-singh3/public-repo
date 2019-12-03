@@ -40,7 +40,6 @@
           "resources": [],
           "artifacts": [],
           "properties": [],
-          "run_instance_count": "0",
           "timeout": 0.0,
           "tasks": [
             {
@@ -74,7 +73,6 @@
           "resources": [],
           "artifacts": [],
           "properties": [],
-          "run_instance_count": "0",
           "timeout": 0.0,
           "tasks": [
             {

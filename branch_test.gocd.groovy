@@ -39,6 +39,7 @@ GoCD.script {
               }
             }
           }
+          ctx.repo.notifiesBy(ctx.provider)
         }
       }
     }

@@ -33,17 +33,17 @@ GoCD.script {
         fullRepoName = "kritika-singh3/public-repo"
 
         // OPTIONAL for public repos, but recommended.
-        apiUser = "kritika-singh3"
+        //apiUser = "kritika-singh3"
 
         // lookup() allows one to provide secret/secure values to the script.
         // These arbitrary key+values are configurable from the UI on the GoCD server.
         //
         // lookup() is resolvable/usable anywhere in config script block.
-        apiPass = lookup("bitbucket.auth.token")
+        //apiPass = lookup("bitbucket.auth.token")
 
         // OPTIONAL for public repos
-        materialUsername = "kritika-singh3"
-        materialPassword = lookup("bitbucket.auth.token")
+        //materialUsername = "kritika-singh3"
+        //materialPassword = lookup("bitbucket.auth.token")
       }
 
       onMatch { ctx ->

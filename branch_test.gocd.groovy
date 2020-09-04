@@ -12,14 +12,22 @@ GoCD.script {
 //        materialUsername = "krazybird"
 //        materialPassword = lookup('github.auth.token')
 //      }
-      from = github {
-        fullRepoName = 'gocd/docs.go.cd'
-        materialUrl = "https://github.com/gocd/docs.go.cd"
-        //apiAuthToken = "some-value"
-        apiAuthToken = lookup('github.auth.token')
-        //materialUsername = "krazybird"
-        //materialPassword = "testing"
-        //materialPassword = lookup('github.auth.token')
+//      from = github {
+//        fullRepoName = 'gocd/docs.go.cd'
+//        materialUrl = "https://github.com/gocd/docs.go.cd"
+//        //apiAuthToken = "some-value"
+//        apiAuthToken = lookup('github.auth.token')
+//        //materialUsername = "krazybird"
+//        //materialPassword = "testing"
+//        //materialPassword = lookup('github.auth.token')
+//      }
+      from = gitlab {
+        apiAuthToken = lookup("gitlab.auth.token")
+        fullRepoName = "testing-group12/public-repo"
+
+        // OPTIONAL for public repos.
+        materialUsername = "kritika-singh3"
+        materialPassword = ookup("gitlab.auth.token")
       }
 
       onMatch { ctx ->

@@ -17,7 +17,7 @@ GoCD.script {
           fetchMaterials = true
           jobs {
             job('job1') {
-              elasticProfileId = 'agent1'
+              //elasticProfileId = 'agent1'
               tasks {
                 exec {
                   commandLine = ['ls']

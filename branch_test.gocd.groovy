@@ -12,38 +12,21 @@ GoCD.script {
 //        materialUsername = "krazybird"
 //        materialPassword = lookup('github.auth.token')
 //      }
-//      from = github {
-//        fullRepoName = 'gocd/docs.go.cd'
-//        materialUrl = "https://github.com/gocd/docs.go.cd"
-//        //apiAuthToken = "some-value"
-//        apiAuthToken = lookup('github.auth.token')
-//        //materialUsername = "krazybird"
-//        //materialPassword = "testing"
-//        //materialPassword = lookup('github.auth.token')
-//      }
+      from = github {
+        fullRepoName = 'gocd-private/aws'
+        materialUrl = "https://github.com/gocd-private/aws"
+        apiAuthToken = lookup('github.auth.token')
+      }
 //      from = gitlab {
 //        apiAuthToken = lookup("gitlab.auth.token")
 //        fullRepoName = "testing-group12/public-repo"
-
-//        // OPTIONAL for public repos.
 //        materialUsername = "kritika-singh3"
 //        materialPassword = lookup("gitlab.auth.token")
 //      }
-      from = bitbucket {
-        fullRepoName = "kritika-singh3/public-repo"
-
-        // OPTIONAL for public repos, but recommended.
-        //apiUser = "kritika-singh3"
-
-        // lookup() allows one to provide secret/secure values to the script.
-        // These arbitrary key+values are configurable from the UI on the GoCD server.
-        //
-        // lookup() is resolvable/usable anywhere in config script block.
-        //apiPass = lookup("bitbucket.auth.token")
-
-        // OPTIONAL for public repos
-        //materialUsername = "kritika-singh3"
-        //materialPassword = lookup("bitbucket.auth.token")
+//      from = bitbucket {
+//        fullRepoName = "kritika-singh3/public-repo"
+//        //apiUser = "kritika-singh3"
+//        //apiPass = lookup("bitbucket.auth.token")
       }
 
       onMatch { ctx ->

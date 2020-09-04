@@ -15,10 +15,10 @@ GoCD.script {
       from = github {
         fullRepoName = 'krazybird/public-repo'
         materialUrl = "https://github.com/krazybird/public-repo"
-        apiAuthToken = ""
+        apiAuthToken = lookup('github.auth.token')
         materialUsername = "krazybird"
-        materialPassword = ""
-//        materialPassword = lookup('github.auth.token')
+//        materialPassword = "testing"
+        materialPassword = lookup('github.auth.token')
       }
 
       onMatch { ctx ->

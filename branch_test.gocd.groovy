@@ -13,13 +13,13 @@ GoCD.script {
 //        materialPassword = lookup('github.auth.token')
 //      }
       from = github {
-        fullRepoName = 'krazybird/public-repo'
-        materialUrl = "https://github.com/krazybird/public-repo"
+        fullRepoName = 'gocd/docs.go.cd'
+        materialUrl = "https://github.com/gocd/docs.go.cd"
         //apiAuthToken = "some-value"
         apiAuthToken = lookup('github.auth.token')
-        materialUsername = "krazybird"
+        //materialUsername = "krazybird"
         //materialPassword = "testing"
-        materialPassword = lookup('github.auth.token')
+        //materialPassword = lookup('github.auth.token')
       }
 
       onMatch { ctx ->
@@ -39,6 +39,7 @@ GoCD.script {
               }
             }
           }
+          
           ctx.repo.notifiesBy(ctx.provider)
         }
       }

@@ -27,7 +27,7 @@ GoCD.script {
 
         // OPTIONAL for public repos.
         materialUsername = "kritika-singh3"
-        materialPassword = ookup("gitlab.auth.token")
+        materialPassword = lookup("gitlab.auth.token")
       }
 
       onMatch { ctx ->

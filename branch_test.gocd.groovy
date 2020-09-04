@@ -27,7 +27,7 @@ GoCD.script {
 //        fullRepoName = "kritika-singh3/public-repo"
 //        //apiUser = "kritika-singh3"
 //        //apiPass = lookup("bitbucket.auth.token")
-      }
+//      }
 
       onMatch { ctx ->
         pipeline("testing-branch-${ctx.branchSanitized}") {

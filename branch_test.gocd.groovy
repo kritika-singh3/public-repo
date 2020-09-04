@@ -43,7 +43,7 @@ GoCD.script {
 
         // OPTIONAL for public repos
         materialUsername = "kritika-singh3"
-        materialPassword = lookup("gitlab.auth.token")
+        materialPassword = lookup("bitbucket.auth.token")
       }
 
       onMatch { ctx ->

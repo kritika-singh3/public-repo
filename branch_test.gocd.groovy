@@ -36,9 +36,7 @@ GoCD.script {
       }
 
       onMatch { ctx ->
-        
-        ctx.repo.notifiesBy(ctx.provider)
-        
+      
         pipeline("testing-branch-${ctx.branchSanitized}") {
           group = "testing"
 
@@ -55,6 +53,8 @@ GoCD.script {
               }
             }
           }
+          
+        ctx.repo.notifiesBy(ctx.provider)
         }
       }
     }

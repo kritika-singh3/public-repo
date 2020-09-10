@@ -31,7 +31,7 @@ GoCD.script {
       
       from = github {
         fullRepoName = 'krazybird/public-repo'
-        materialUrl = "https://github.com/krazybird/public-repo"
+//        materialUrl = "https://github.com/krazybird/public-repo"
         apiAuthToken = lookup('github.auth.token')
       }
 

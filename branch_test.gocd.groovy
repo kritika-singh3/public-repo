@@ -12,11 +12,11 @@ GoCD.script {
 //        materialUsername = "krazybird"
 //        materialPassword = lookup('github.auth.token')
 //      }
-      from = github {
-        fullRepoName = 'gocd-private/aws'
-        materialUrl = "https://github.com/gocd-private/aws"
-        apiAuthToken = lookup('github.auth.token')
-      }
+//      from = github {
+//        fullRepoName = 'gocd-private/aws'
+//        materialUrl = "https://github.com/gocd-private/aws"
+//        apiAuthToken = lookup('github.auth.token')
+//      }
 //      from = gitlab {
 //        apiAuthToken = lookup("gitlab.auth.token")
 //        fullRepoName = "testing-group12/public-repo"
@@ -28,6 +28,12 @@ GoCD.script {
 //        //apiUser = "kritika-singh3"
 //        //apiPass = lookup("bitbucket.auth.token")
 //      }
+      
+      from = github {
+        fullRepoName = 'krazybird/public-repo'
+        materialUrl = "https://github.com/krazybird/public-repo"
+        apiAuthToken = lookup('github.auth.token')
+      }
 
       onMatch { ctx ->
         pipeline("testing-branch-${ctx.branchSanitized}") {

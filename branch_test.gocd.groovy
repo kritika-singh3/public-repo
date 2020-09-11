@@ -25,7 +25,7 @@ GoCD.script {
 //      }
       from = bitbucket {
         fullRepoName = "kritika-singh3/public-repo"
-        //apiUser = "kritika-singh3"
+        apiUser = "kritika-singh3"
         apiPass = lookup("bitbucket.auth.token")
       }
   

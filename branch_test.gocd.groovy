@@ -17,23 +17,24 @@ GoCD.script {
 //        materialUrl = "https://github.com/gocd-private/aws"
 //        apiAuthToken = lookup('github.auth.token')
 //      }
-//      from = gitlab {
-//        apiAuthToken = lookup("gitlab.auth.token")
-//        fullRepoName = "testing-group12/public-repo"
+      from = gitlab {
+        apiAuthToken = lookup("gitlab.auth.token")
+        fullRepoName = "testing-group12/public-repo"
 //        materialUsername = "kritika-singh3"
 //        materialPassword = lookup("gitlab.auth.token")
-//      }
+      }
 //      from = bitbucket {
 //        fullRepoName = "kritika-singh3/public-repo"
 //        //apiUser = "kritika-singh3"
 //        //apiPass = lookup("bitbucket.auth.token")
 //      }
-      
-      from = github {
-        fullRepoName = 'krazybird/public-repo'
-//        materialUrl = "https://github.com/krazybird/public-repo"
-        apiAuthToken = lookup('github.auth.token')
-      }
+  
+// works for notifications with 196 one      
+//      from = github {
+//        fullRepoName = 'krazybird/public-repo'
+////        materialUrl = "https://github.com/krazybird/public-repo"
+//        apiAuthToken = lookup('github.auth.token')
+//      }
 
       onMatch { ctx ->
       

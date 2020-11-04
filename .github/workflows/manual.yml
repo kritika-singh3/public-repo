@@ -6,7 +6,8 @@ name: Manual workflow
 # or API.
 on:
   workflow_run:
-    workflows:['Preview']
+    workflows: ["Preview"]
+    branches: [master]
   workflow_dispatch:
     # Inputs the workflow accepts.
     inputs:

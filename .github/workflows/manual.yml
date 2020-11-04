@@ -31,5 +31,7 @@ jobs:
     # Runs a single command using the runners shell
     - name: Send greeting
       run: |
-        echo "Hello ${{ github.event.inputs.name }}"
-        echo "Hello again ${{ inputs.name }}"
+        echo "Hello github"
+        echo "Hope this runs"
+        #echo "Hello ${{ github.event.inputs.name }}"
+        #echo "Hello again ${{ inputs.name }}"
